@@ -1,0 +1,42 @@
+@import '_menu';
+@import '_manager';
+@import '_datepicker';
+
+@font-face {
+  font-family: Lato;
+  src: url(../assets/fonts/Lato-Regular.ttf);
+};
+
+.break-text {
+  // https://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/
+  /* These are technically the same, but use both */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
+  -ms-word-break: break-all;
+  /* This is the dangerous one in WebKit, as it breaks things wherever */
+  word-break: break-all;
+  /* Instead use this non-standard one: */
+  word-break: break-word;
+
+  /* Adds a hyphen where the word breaks, if supported (No Blink) */
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+};
+
+.no-margin {
+  margin: 0 !important;
+};
+
+body {
+  background-image: url("https://trello-backgrounds.s3.amazonaws.com/SharedBackground/2560x1710/9653e5ff312b477a140e5afbb7f660ec/photo-1461727885569-b2ddec0c4328");
+  background-size: cover;
+  font-size: 14px;
+  font-family: Lato;
+};
+
+p {
+  margin: 0;
+}
