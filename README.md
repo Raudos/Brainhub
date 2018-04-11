@@ -1,6 +1,6 @@
 # Recruitment task for Brainhub (https://brainhub.eu/)
 
-## Frontend built With
+## Frontend built with
 
 * [React](https://reactjs.org/) - A JavaScript library for building user interfaces
 * [Redux](https://redux.js.org/) - A predictable state container for JavaScript apps
@@ -23,8 +23,10 @@
 
 1. Clone this repository and install its dependencies.
 
-  > git clone git://github.com/Raudos/Brainhub.git BrainhubTask
+  > git clone git://github.com/Raudos/Brainhub.git BrainhubTask'
+
   > cd BrainhubTask
+
   > npm install
 
 2. Start the MongoDB daemon.

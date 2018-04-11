@@ -4,9 +4,11 @@ const { app } = require("../index");
 const { Event } = require("../models/event");
 
 // Routes
+const getEventSchema = require("./routes/getEventSchema");
 const { createEventTest } = require("./routes/createEvent");
 const getEventsTest = require("./routes/getEvents");
 const getEventTest = require("./routes/getEvent");
+
 
 describe("Event model tests.", () => {
   it("Confirm NODE_ENV.", done => {
@@ -15,6 +17,7 @@ describe("Event model tests.", () => {
     Event.remove({}).then(a => done());
   });
 
+  getEventSchema(app);
   createEventTest(app);
   getEventsTest(app);
   getEventTest(app);

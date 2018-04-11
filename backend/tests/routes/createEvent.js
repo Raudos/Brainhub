@@ -10,7 +10,7 @@ const dummyEvent = {
 
 const createEventTest = app => {
   describe("Tests for event creation", () => {
-    test("should create new event", done => {
+    test("Should create new event", done => {
       request(app)
         .post("/createEvent")
         .send(dummyEvent)
@@ -24,7 +24,7 @@ const createEventTest = app => {
         })
     });
 
-    test("should not create new event because of Email validation", done => {
+    test("Should not create new event because of Email validation", done => {
       request(app)
         .post("/createEvent")
         .send({
@@ -43,7 +43,7 @@ const createEventTest = app => {
         })
     });
 
-    test("should not create new event because of Date validation", done => {
+    test("Should not create new event because of Date validation", done => {
       request(app)
         .post("/createEvent")
         .send({
@@ -62,7 +62,7 @@ const createEventTest = app => {
         })
     });
 
-    test("should not create new event because of First Name validation", done => {
+    test("Should not create new event because of First Name validation", done => {
       request(app)
         .post("/createEvent")
         .send({
@@ -81,7 +81,7 @@ const createEventTest = app => {
         })
     });
 
-    test("should not create new event because of Last Name validation", done => {
+    test("Should not create new event because of Last Name validation", done => {
       request(app)
         .post("/createEvent")
         .send({
