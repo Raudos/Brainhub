@@ -1,6 +1,6 @@
 export default {
   correct: {
-    firstName: "Piotra",
+    firstName: "Piotr",
     lastName: "Sklepiński",
     email: "sklepinski.p@gmail.com"
   },

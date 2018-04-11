@@ -7,7 +7,7 @@ import formatTimestamp from "src/generic/formatTimestamp";
 
 const ListElement = props => (
   <div key={props.event._id} className='event'>
-    <div to={`/events/${props.event._id}`}>{`${props.event.lastName} ${props.event.firstName} `}</div>
+    <Link to={`/events/${props.event._id}`}>{`${props.event.lastName} ${props.event.firstName} `}</Link>
 
     <div className="secondary-info">
       <i className="fas fa-envelope"/>
