@@ -1,5 +1,19 @@
 # Recruitment task for Brainhub (https://brainhub.eu/)
 
+Create a small application form for an event. The form should contain fields listed below:
+- First name (required)
+- Last name (required)
+- Email (required, valid email address)
+- Event date (required, simple date picker)
+- UI is not important
+
+Requirements:
+- Frontend should be written in React (using Redux will be very appreciated)
+- Data from form should be saved in DB (we suggest MongoDB)
+- Data from form should be validated before saving
+- Errors should be handled and displayed for the user
+- App should be tested (It's your decision what kind of tests are necessary)
+
 ## Frontend built with
 
 * [React](https://reactjs.org/) - A JavaScript library for building user interfaces
